@@ -2,11 +2,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
     template: `<div>
-                    <h1> {{ 'First Name : '+ FirstName + ', Last Name : ' + LastName }} </h1>                 
+                    <img [src] = 'ImagePath' />                
                </div>`
 })
-
 export class AppComponent {
-  FirstName: string = 'Anurag';
-  LastName: string = 'Mohanty';
+  ImagePath : string = "https://dotnettutorials.net/wp-content/uploads/2019/09/cropped-dotnettutorials.png";
 }
